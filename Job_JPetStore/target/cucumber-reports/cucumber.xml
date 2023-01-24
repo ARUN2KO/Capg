@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="207.962">
+<testcase classname="Shoping Cart" name="Successful checkout with some items in the cart" time="19.87">
+<system-out><![CDATA[Given the user has logged in and the user has added a product in the Shopping cart "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+When the user clicks proceed to checkout....................................passed
+Then the user is redirected to the payment page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shoping Cart" name="Unsuccessful checkout" time="46.746">
+<system-out><![CDATA[Given the user has logged in "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+When the user clicks the shopping cart......................................passed
+Then the user sees a empty cart message and the proceed to checkout option is not visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Shoping Cart" name="Increase number of products" time="17.262">
+<system-out><![CDATA[Given the user has logged in and the user has added a product in cart "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+When the user increase the product and click update.........................passed
+Then the quantity of the product is increased...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shoping Cart" name="User wants to remove an item" time="52.911">
+<system-out><![CDATA[Given the user has logged in and the user has added a product in the cart "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+When the user clicks remove.................................................passed
+Then the specific product is removed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shoping Cart" name="User wants to remove all items" time="23.242">
+<system-out><![CDATA[Given the user has logged in and the user has added many products in the cart "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+When the user clicks remove all.............................................passed
+Then the all products are removed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signing In" name="Successfully signed in" time="15.91">
+<system-out><![CDATA[Given the user launched the website.........................................passed
+When the user has logged in with the valid credentials "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+Then the user got signed in.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signing In" name="Invalid Credentials" time="15.576">
+<system-out><![CDATA[Given the user launchedd the website........................................passed
+When the user has logged in with the invalid credentials "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+Then the user get error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signing In" name="Sign Out" time="16.163">
+<system-out><![CDATA[Given the user launcheddd the website.......................................passed
+When the user has logged in with the valid credentials and the user has logged out "C:\Users\ARUNKUA\eclipse-workspace\BookMyShow2\src\test\resources\data\AppData.xlsx" and "userpwd".passed
+Then the user signed out....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
